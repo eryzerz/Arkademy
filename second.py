@@ -1,7 +1,12 @@
 import re
 
+
 def is_username_valid(username):
-    unameRegex = re.compile(r'^[^0-9][0-9a-zA-Z]{5,9}$')
+    # Seharusnya begini, karena tertulis di soal hanya
+    # kombinasi huruf besar, kecil, dan angka.
+    # Tanpa menyebutkan setidaknya harus ada huruf besar
+    # unameRegex = re.compile(r'^[^0-9][0-9a-zA-Z]{5,9}$')
+    unameRegex = re.compile(r'^(?=.*[A-Z]+.*)[^0-9][0-9a-zA-Z]{5,9}$')
     match = unameRegex.search(username)
     if match:
         return True
@@ -20,11 +25,11 @@ def is_password_valid(password):
 
 
 def main():
-    username = input('Username: ')
-    print(is_username_valid(username))
-    password = input('Password: ')
-    print(is_password_valid(password))
-    return
+
+    print(is_username_valid('zeronull'))
+    print(is_username_valid('Ayu99v'))
+    print(is_password_valid('p@ssW0rd#'))
+    print(is_password_valid('C0d3YourFuture!#'))
 
 
 if __name__ == '__main__':

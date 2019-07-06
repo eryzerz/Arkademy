@@ -16,11 +16,23 @@ def turn_lamps(combination):
                 lamps[0] = True
             else:
                 lamps[0] = False
-    return lamps
+
+    on = 0
+    off = 0
+
+    for i in lamps:
+        if i == True:
+            on += 1
+        else:
+            off += 1
+
+    print(lamps)
+    print('Jumlah lampu menyala: {}'.format(on))
+    print('Jumlah lampu mati: {}'.format(off))
 
 
 def main():
-    print(turn_lamps(1321))
+    turn_lamps(1321)
 
 
 if __name__ == "__main__":

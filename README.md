@@ -11,4 +11,4 @@ These are solutions for Arkademy B11-K2 selection test.
     -pip install -r requirements.txt
     -py manage.py runserver
 
-_Solusi terkendala karena menambahkan fitur pop-up, sehingga page create, update, dan delete tidak dapat ter-trigger. Namun saya pernah memiliki project sejenis yang sudah saya deploy ke heroku, erjango.herokuapp.com_
+_Solusi terkendala karena menambahkan fitur pop-up, sehingga page create, update, dan delete tidak dapat ter-trigger. Namun saya pernah memiliki project sejenis yang sudah saya deploy ke heroku, (erjango.herokuapp.com)_

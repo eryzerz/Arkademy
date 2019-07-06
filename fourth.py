@@ -1,4 +1,5 @@
 def buyNoodle(date, money):
+    assert 1 <= date <= 30
     price = 1650
     amount = money // price
     if date % 5:
@@ -19,7 +20,7 @@ def buyNoodle(date, money):
 
 
 def main():
-    print(buyNoodle(25, 50000))
+    print(buyNoodle(30, 50000))
 
 
 if __name__ == "__main__":

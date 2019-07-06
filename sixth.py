@@ -2,6 +2,7 @@ def turn_lamps(combination):
     lamps = [False] * 15
     combination = str(combination)
     for num in combination:
+        assert 1 <= int(num) <= 3
         if int(num) != 1:
             for i in range(1, 15 + 1):
                 if i % int(num) == 0:
